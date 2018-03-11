@@ -1,0 +1,142 @@
+.content {
+  width: 100%;
+}
+
+.payCell {
+  width: 100%;
+  background: #fff;
+}
+
+.cellBox {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.cell_top {
+  width: 100%;
+  height: 160rpx;
+  line-height: 160rpx;
+   /* display: flex;
+  align-items: center;
+  justify-content: space-around ;  */
+}
+
+.cellView {
+  display: inline-block;
+  float: left;
+}
+
+.ct_left {
+   width: 20%; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rmb_icon {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.pay_title {
+   width: 60%; 
+  font-size: 28rpx;
+  color: #555;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.payNum {
+   width: 15%; 
+  font-size: 38rpx;
+  color: #333;
+  text-align: center;
+ margin-right: 30rpx;
+ display: inline-block;
+}
+
+.cell_info {
+  width: 88%;
+  height: 160rpx;
+  line-height: 60rpx;
+  margin: 0 auto;
+}
+
+.payproject {
+  font-size: 30rpx;
+  color: #22c689;
+}
+
+.jl_name {
+  font-size: 30rpx;
+  color: #22c689;
+}
+
+.payCell_type {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.cellBox_type {
+  width: 95%;
+  margin: 0 auto;
+  height: 100rpx;
+}
+
+.cell_left {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell_text {
+  width: 65%;
+  height: 100%;
+  font-size: 28rpx;
+  color: #222222;
+  line-height: 100rpx;
+}
+
+.cell_right {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.payBtnView{
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+/*手机fixed提示*/
+.iPhoneHintView{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999999999;
+}
+.iHintv{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iHintText{
+  background: #20eb7a;
+  font-size: 32rpx;
+  color: #ffffff;
+  padding: 10rpx;
+  border-radius: 4rpx;
+}

@@ -1,0 +1,48 @@
+<view class='content'>
+  <!-- fixed提示 -->
+  <view class='iPhoneHintView' wx:if="{{iPhoneHintView}}">
+    <view class='iHintv'>
+      <view class='iHintText'>{{iHintText}}</view>
+    </view>
+  </view>
+  <view class="payCell">
+    <view class="cellBox">
+      <view class="cell_top">
+        <view class="ct_left cellView">
+          <image class="rmb_icon" src="../img/rmb.png" />
+        </view>
+        <view class="pay_title cellView">支付金额</view>
+        <view class="payNum cellView">¥{{cprice}}</view>
+      </view>
+      <view class="cell_info">
+        <view class="payproject">课程：{{cname}}</view>
+        <view class="jl_name">教练：{{tname}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="payCell_type" style="margin-top:20rpx;">
+    <view class="cellBox_type" data-ptype="wx" bindtap='upPayMethod'>
+      <view class="cell_left cellView">
+        <image class="rmb_icon" src="../img/wxlogo.png" />
+      </view>
+      <view class="cell_text cellView">微信支付</view>
+      <view class="cell_right cellView">
+        <icon type="success" color="{{iconColor_a}}" />
+      </view>
+    </view>
+  </view>
+  <view class="payCell_type">
+    <view class="cellBox_type" data-ptype="yue" bindtap='upPayMethod'>
+      <view class="cell_left cellView">
+        <image class="rmb_icon" src="../img/rmb.png" />
+      </view>
+      <view class="cell_text cellView">余额支付</view>
+      <view class="cell_right cellView">
+        <icon type="success" color="{{iconColor_b}}" />
+      </view>
+    </view>
+  </view>
+  <view class="payBtnView">
+    <button type="primary" class="submitBtn" data-paytype='{{paytype}}' bindtap="launchPayMethod">购买</button>
+  </view>
+</view>
